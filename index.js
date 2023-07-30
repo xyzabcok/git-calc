@@ -30,3 +30,7 @@ function operate(operation) {
             break;
     }
 }
+
+function buttonHandler(event) {
+    document.querySelector();
+}

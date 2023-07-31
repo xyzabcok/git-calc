@@ -31,6 +31,12 @@ function operate(operation) {
     }
 }
 
+const lcdScreen = document.querySelector("#screen");
+console.log(`${lcdScreen}`);
+
 function buttonHandler(event) {
-    document.querySelector();
+    const clickedButton = event.currentTarget;
+    lcdScreen.innerHTML += `${clickedButton.textContent}`;
 }
+
+

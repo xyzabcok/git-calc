@@ -36,7 +36,14 @@ console.log(`${lcdScreen}`);
 
 function buttonHandler(event) {
     const clickedButton = event.currentTarget;
-    lcdScreen.innerHTML += `${clickedButton.textContent}`;
+    if (clickedButton.classList.contains('num')) {
+            lcdScreen.innerHTML += `${clickedButton.textContent}`;
+    } else if (clickedButton.classList.contains(`operator`)) {
+            lcdScreen.innerHTML = `${clickedButton.textContent}`;
+    } else if (clickedButton.classList.contains('clear')) {
+            lcdScreen.innerHTML = ``;
+    }
+
 }
 
 

@@ -30,6 +30,10 @@ h1 {
     border: 2px solid black;
 }
 
+#clear {
+    width: 100%;
+}
+
 #screen {
     border: 2px solid green;
     background-color: lightgreen;
